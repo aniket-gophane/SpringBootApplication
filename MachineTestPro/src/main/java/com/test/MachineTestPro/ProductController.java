@@ -27,7 +27,7 @@ public class ProductController {
 	@PostMapping("/api/products")
 	public String createProduct(Product product)
 	{
-		System.out.println("data add");
+		System.out.println("Product Successfully Add");
 		productRepository.save(product);
 		return "Data Added";
 	}
