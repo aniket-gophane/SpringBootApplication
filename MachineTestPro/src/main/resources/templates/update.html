@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+    <title>Update Category</title>
+</head>
+<body>
+    <h2>Update Category</h2>
+    
+    <form th:action="@{/api/categories/update/{id}(id=${category.id})}" method="post">
+        <input type="text" name="name" th:value="${category.name}" required>
+        <button type="submit">Update</button>
+    </form>
+    
+    <a href="/categories">Back to Categories</a>
+</body>
+</html>
