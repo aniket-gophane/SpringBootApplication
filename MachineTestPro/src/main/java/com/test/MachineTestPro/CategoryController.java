@@ -29,7 +29,7 @@ public class CategoryController {
 	@PostMapping("/api/categories")
 	public String createCategory(Category category)
 	{
-		System.out.println("data add");
+		System.out.println("Category add successful");
 		categoryRepository.save(category);
 		return "Data Added";
 	}

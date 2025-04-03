@@ -29,7 +29,7 @@ public class ProductController {
 	{
 		System.out.println("Product Successfully Add");
 		productRepository.save(product);
-		return "Data Added";
+		return "Product Added ";
 	}
 	
 //	@PostMapping("/products")
